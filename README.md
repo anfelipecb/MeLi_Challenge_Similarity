@@ -10,13 +10,13 @@ Debemos clonar el respositorio adecuadamente. Pasos para clonarlo:
 
 1. Desde la terminal, escoger el directorio local donde se quiere clonar el repositorio (ej: 'cd Users/anfelipecb/MeLI/Proyectos')
 2. Clonar el repositorio usando git clone: 
-
-`git clone https://github.com/anfelipecb/MeLi_Challenge_Similarity.git`
-
-3. Navegar y asignar al repositorio creado 
+```
+git clone https://github.com/anfelipecb/MeLi_Challenge_Similarity.git
+```
+3. Navegar y asignar al repositorio creado:
     `cd tu-repo-configurado`
 
-4. Desde la terminal del proyecto, creamos y activamos el entorno virtual (acá lo llamamos melienv)
+4. Desde la terminal del proyecto, creamos y activamos el entorno virtual (acá lo llamamos melienv):
     `python3 -m venv melienv`
     `source myenv/bin/activate`
 5. Para agregar el entorno virtual a jupyter primero nos aseguramos de instalar el paquete ipykernel que nos permitirá ejecutar python desde jupyter dentro del entorno virtual: 
