@@ -1,4 +1,4 @@
-# MeLi_Challenge_Similarity
+# MeLi Challenge: Similitud de items y agrupación
 
 Por: Andrés Felipe Camacho
 Personal-site: [anfelipecb.github.io](https://anfelipecb.github.io/)
@@ -14,15 +14,22 @@ Debemos clonar el respositorio adecuadamente. Pasos para clonarlo:
 git clone https://github.com/anfelipecb/MeLi_Challenge_Similarity.git
 ```
 3. Navegar y asignar al repositorio creado:
-    `cd tu-repo-configurado`
-
+```
+cd tu-repo-configurado
+```
 4. Desde la terminal del proyecto, creamos y activamos el entorno virtual (acá lo llamamos melienv):
-    `python3 -m venv melienv`
-    `source myenv/bin/activate`
+```
+python3 -m venv melienv
+source myenv/bin/activate
+```
 5. Para agregar el entorno virtual a jupyter primero nos aseguramos de instalar el paquete ipykernel que nos permitirá ejecutar python desde jupyter dentro del entorno virtual: 
+```
     `pip install ipykernel`
+```
 6. Registramos el el entorno virtual como kernel a Jupyter
+```
     `python -m ipykernel install --user --name=myenv --display-name="Python (myenv)"`
+```
 (Se ha creado un script con la instalación y configuración, llamado  'setup.sh')
     Antes de ejecutarlo, debe hacerlo ejecutable. Abrimos la terminal donde está setup.sh
         `chmod +x setup.sh`
