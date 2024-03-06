@@ -56,7 +56,8 @@ def get_data_API_items(category_id, limit=None, offset=0):
         
         # actualización del offset
         offset += len(data['results']) #iteracion de 50 en 50 en la práctica, pero más flexible, por si la última página no tiene los 50 sino menos
-        print(f'va en el ofsett: {offset}')
+        size=len(data['results'])
+        print(f'va en el ofsett: {offset} con tamaño:{size}')
     #Normalizamos 
     df = pd.json_normalize(products_list)
     
