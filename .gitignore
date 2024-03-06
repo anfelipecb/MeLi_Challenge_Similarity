@@ -1,2 +1,5 @@
 melienv/
+data/final/imgs
+data/final/combined_f_Res50.npy
+data/final/combined_f_xception.npy
 .env

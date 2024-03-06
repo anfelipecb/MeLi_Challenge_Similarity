@@ -18,6 +18,8 @@ pip install -U efficientnet
 pip install -U "scikit-learn"
 pip install transformers
 pip3 install torch torchvision
+pip install matplotlib 
+
 # Registrar el entorno virtual como kernel en Jupyter
 python -m ipykernel install --user --name=melienv --display-name="Python (melienv)"
 

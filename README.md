@@ -1,9 +1,23 @@
-# MeLi Challenge: Similitud de items y agrupación
+<img src = "../Assets/imgs/ML-Codo-g.jpg" alt = "Encabezado MLDS" width = "25%" style="float: left; margin-right:20px" >  </img>
 
-Por: Andrés Felipe Camacho
-Personal-site: [anfelipecb.github.io](https://anfelipecb.github.io/)
+## **MeLi Challenge - Similitud de items**
+### **archivo README.md**
+**Por: Andrés Felipe Camacho Baquero - [Personal website](https://anfelipecb.github.io/)**
+
+--- 
+En este challenge nos piden lo siguiente: 
+    Dentro del marketplace existen productos similares o idénticos entre sí (son productos vendidos por distintos sellers, en la api puedes obtener y descargar los títulos e incluso las imágenes!). ¿Cómo buscar dichos ítems para agruparlos y volverlos comparables entre sí? Esto permitiría mejorar la experiencia ante muchas opciones similares.
+
+---
+
+Los notebooks aquí se manejan de manera anidada. Aquí un resumen 
+- **Notebook00** es el analisis exploratorio inicial, es desordenado pero corre continuamente. El proceso logido para llegar a mi solución final 
+- **Notebook01** Se extraen los datos de la API adecuadamente 
+- **Notebook02** Se extraen los embeddings de texto y de imagen 
+- **Notebook03** se agrupan los superembeddings obtenidos mediante clusters y se descargan las imagenes
 
 
+### Antes de empezar 
 
 Debemos clonar el respositorio adecuadamente. Pasos para clonarlo: 
 
@@ -50,17 +64,16 @@ Todas las dependencias usadas en los notebooks están resumidas en el archivo "r
         `pip install -r requirements.txt`
 
 
-Este es el arbol del proyecto, que obtuve con el comando tree (sobre la terminal):
+Este es el arbol del proyecto, que obtuve con el comando tree (sobre la terminal). Excluto las imagenes finales:
 ```
 tree  -I  'melienv'
 
 ```
 .
+.
 ├── Assets
-│   └── imgs
-│       └── ML-Codo-g.jpg
 ├── Notebooks
-│   ├── 00_API y Analisis Exploratorio.ipynb
+│   ├── 00_Exploracion API y Datos.ipynb
 │   ├── 01_Analisis de datos.ipynb
 │   ├── 02_Extraccion_Embeddings.ipynb
 │   ├── 03_AgrupacionyAnalisis.ipynb
@@ -69,8 +82,25 @@ tree  -I  'melienv'
 ├── README.md
 ├── data
 │   ├── final
+│   │   ├── combined_f_Res50.npy
+│   │   ├── combined_f_efficientb0.npy
+│   │   ├── combined_f_efficientb7.npy
+│   │   ├── combined_f_xception.npy
+│   │   ├── data_items_all.csv
+│   │   └── ids_efficientnetb7.npy
 │   ├── processed
+│   │   ├── PCA_ResNet50.png
+│   │   ├── PCA_ResNet50_2D.png
+│   │   ├── PCA_ResNet50_3D.png
+│   │   ├── tSNE_ResNet50_2D.png
+│   │   ├── tSNE_ResNet50_3D.png
+│   │   ├── tSNE_efficientb0_2D.png
+│   │   ├── tSNE_efficientb7_2D.png
+│   │   ├── tSNE_xception_2D.png
+│   │   └── text_tSNE_BERT_2D.png
 │   └── raw
+│       ├── df_items_especificos.csv
+│       ├── df_solo_audifonos.csv
 │       └── images
 ├── environment.yml
 ├── scripts
@@ -81,6 +111,7 @@ tree  -I  'melienv'
         ├── __init__.py
         ├── __pycache__
         │   ├── __init__.cpython-311.pyc
-        │   └── config.cpython-311.pyc
+        │   ├── config.cpython-311.pyc
+        │   └── custom_funcs.cpython-311.pyc
         ├── config.py
         └── custom_funcs.py
