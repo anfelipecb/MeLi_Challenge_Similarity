@@ -42,3 +42,39 @@ Todas las dependencias usadas en los notebooks están resumidas en el archivo "r
 
 
 Corremos el código en 'Connection_API.ipynb'
+
+
+Este es el arbol del proyecto, que obtuve con el comando tree (sobre la terminal):
+```
+tree  -I  'melienv'
+
+```
+.
+├── Assets
+│   └── imgs
+│       └── ML-Codo-g.jpg
+├── Notebooks
+│   ├── 00_API y Analisis Exploratorio.ipynb
+│   ├── 01_Analisis de datos.ipynb
+│   ├── 02_Extraccion_Embeddings.ipynb
+│   ├── 03_AgrupacionyAnalisis.ipynb
+│   └── figures
+│       └── treemap_categorias2.png
+├── README.md
+├── data
+│   ├── final
+│   ├── processed
+│   └── raw
+│       └── images
+├── environment.yml
+├── scripts
+├── setup.sh
+└── similarity
+    ├── setup.py
+    └── similarity
+        ├── __init__.py
+        ├── __pycache__
+        │   ├── __init__.cpython-311.pyc
+        │   └── config.cpython-311.pyc
+        ├── config.py
+        └── custom_funcs.py
