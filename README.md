@@ -4,7 +4,6 @@ Por: Andrés Felipe Camacho
 Personal-site: [anfelipecb.github.io](https://anfelipecb.github.io/)
 
 
-Este código fue creado en 
 
 Debemos clonar el respositorio adecuadamente. Pasos para clonarlo: 
 
@@ -30,18 +29,25 @@ source myenv/bin/activate
 ```
     `python -m ipykernel install --user --name=myenv --display-name="Python (myenv)"`
 ```
+
+## Configuración del proyecto: Para hacerlo automáticamente: 
 (Se ha creado un script con la instalación y configuración, llamado  'setup.sh')
     Antes de ejecutarlo, debe hacerlo ejecutable. Abrimos la terminal donde está setup.sh
         `chmod +x setup.sh`
-    Ahora sí se puede ejecutar: 
-        `./setup.sh`
+
+Para configurar el proyecto automáticamente, siga estos pasos:
+
+1. Abra la Terminal.
+2. Navegue hasta el directorio donde desea clonar el repositorio.
+3. Ejecute el siguiente comando:
+
+```bash
+./path/to/setup.sh
+```
 
 Todas las dependencias usadas en los notebooks están resumidas en el archivo "requirements.txt" 
     Para asegurarnos que tenemos todo lo que se necesita listado en este archivo, desde el entorno activado corremos: 
         `pip install -r requirements.txt`
-
-
-Corremos el código en 'Connection_API.ipynb'
 
 
 Este es el arbol del proyecto, que obtuve con el comando tree (sobre la terminal):

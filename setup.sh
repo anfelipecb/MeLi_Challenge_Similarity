@@ -26,6 +26,10 @@ if [ -f requirements.txt ]; then
     pip install -r requirements.txt
 fi
 
+# Instalar dependencias desde setup.py
+# Asegúrate de que setup.py esté configurado para instalar todas las dependencias necesarias
+pip install -e .
+
 echo "Entorno configurado y activado. Kernel de Jupyter listo para usar."
 
 jupyter nbextension enable --py widgetsnbextension
