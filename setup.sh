@@ -11,7 +11,13 @@ source melienv/bin/activate
 # Instalar dependencias
 pip install --upgrade pip
 pip install ipykernel
-
+pip install "nbformat>=4.2.0"
+pip install ipywidgets
+pip install -U kaleido
+pip install -U efficientnet
+pip install -U "scikit-learn"
+pip install transformers
+pip3 install torch torchvision
 # Registrar el entorno virtual como kernel en Jupyter
 python -m ipykernel install --user --name=melienv --display-name="Python (melienv)"
 
@@ -21,3 +27,5 @@ if [ -f requirements.txt ]; then
 fi
 
 echo "Entorno configurado y activado. Kernel de Jupyter listo para usar."
+
+jupyter nbextension enable --py widgetsnbextension
