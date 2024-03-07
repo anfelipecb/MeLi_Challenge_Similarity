@@ -1,4 +1,4 @@
-<img src = "./Assets/imgs/ML-Codo-g.jpg" alt = "Encabezado MLDS" width = "80%" style="float: left; margin-right:20px" >  </img>
+<img src = "./Assets/imgs/ML-Codo-g.jpg" alt = "Encabezado MLDS" width = "40%" style="float: left; margin-right:20px" >  </img>
 
 ## **MeLi Challenge - Similitud de items**
 ### **archivo README.md**
