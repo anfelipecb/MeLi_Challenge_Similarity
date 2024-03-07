@@ -1,4 +1,4 @@
-<img src = "../Assets/imgs/ML-Codo-g.jpg" alt = "Encabezado MLDS" width = "25%" style="float: left; margin-right:20px" >  </img>
+<img src = "./Assets/imgs/ML-Codo-g.jpg" alt = "Encabezado MLDS" width = "25%" style="float: left; margin-right:20px" >  </img>
 
 ## **MeLi Challenge - Similitud de items**
 ### **archivo README.md**
@@ -64,9 +64,12 @@ Todas las dependencias usadas en los notebooks están resumidas en el archivo "r
         `pip install -r requirements.txt`
 
 
-Este es el arbol del proyecto, que obtuve con el comando tree (sobre la terminal). Excluto las imagenes finales:
+#### Este es el arbol del proyecto, que obtuve con el comando tree (sobre la terminal). Excluto las imagenes finales:
+
 ```
 tree  -I  'melienv'
+
+```
 
 ```
 ├── Assets
@@ -113,3 +116,4 @@ tree  -I  'melienv'
         │   └── custom_funcs.cpython-311.pyc
         ├── config.py
         └── custom_funcs.py
+```
