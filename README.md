@@ -11,7 +11,7 @@ En este challenge nos piden lo siguiente:
 ---
 
 Los notebooks aquí se manejan de manera anidada. Aquí un resumen 
-- **Notebook00** es el analisis exploratorio inicial, es desordenado pero corre continuamente. El proceso logid¿co para llegar a mi solución final 
+- **Notebook00** es el analisis exploratorio inicial, es desordenado pero corre continuamente. El proceso lógico para llegar a mi solución final 
 - **Notebook01** Se extraen los datos de la API adecuadamente 
 - **Notebook02** Se extraen los embeddings de texto y de imagen 
 - **Notebook03** se agrupan los superembeddings obtenidos mediante clusters y se descargan las imagenes
